@@ -16,7 +16,9 @@ npm run 2048
 ### Usage
 #### The rules of this game is simple:
 1- Move the cells, and the cells with the same number will be merged, and the number in the merged cell, is the sum of both two numbers.
+
 2- The score is the sum of numbers in all cells.
+
 3- The game is over, when all the cells are filled, and you have no move left.
 
 ### Common Bugs
