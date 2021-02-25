@@ -1,0 +1,46 @@
+.reset {
+    background-color: rgba($color-white, 1);
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    vertical-align: middle;
+    line-height: 5rem;
+    border-radius: 5rem;
+    position: absolute;
+    top:35%;
+    left: 5%;
+    cursor: pointer;
+    box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+    transition: all .2s;
+
+    @media (max-width : 60rem) {
+        width: 5rem - .2 * 5rem;
+        height: 5rem - .2 * 5rem;
+        font-size: 3rem - .2 * 3rem;
+        line-height: 5rem - .2 * 5rem;
+    } 
+    @media (max-width : 32rem) {
+        width: 5rem - .4 * 5rem;
+        height: 5rem - .4 * 5rem;
+        font-size: 3rem - .4 * 3rem;
+        line-height: 5rem - .4 * 5rem;
+    } 
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+    
+    &:active {
+        transform: translateY(2px);
+    }
+    
+    &__text {
+        transition: all .2s;
+        
+        &:active {
+            transform: translateY(2px) rotate(360deg);
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "2048",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "2048" : "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Abdelrahman Ehab",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

@@ -1,0 +1,123 @@
+.buttons {
+    position: absolute;
+    top:80vh;
+    left: 50%;
+    height: 10rem;
+    width: 20rem;
+    transform: translateX(-45%);
+
+    @media (max-width : 60rem) {
+        top:75vh;
+        height: 10rem - .2 * 10rem;
+        width: 20rem - .2 * 20rem;
+    }
+    @media (max-width : 32rem) {
+        left : 45%;
+        top:70vh;
+        height: 10rem - .4 * 10rem;
+        width: 20rem - .4 * 20rem;
+    }  
+    @media (max-height : 35rem) {
+        left : 45%;
+        top:85vh;
+        height: 10rem - .6 * 10rem;
+        width: 20rem - .6 * 20rem;
+    } 
+
+    & * {
+        font-size: 3.5rem;
+        text-align: center;
+        line-height: 5rem;
+        vertical-align: middle;
+        background-color: rgba(orangered, .7);
+        display: inline-block;
+        border-radius: 2rem;
+        width: 6rem;
+        height: 5rem;
+        @media (max-width : 60rem) {
+            height: 5rem - .2 * 5rem;
+            width: 6rem - .2 * 6rem;
+            line-height: 5rem - .2 * 5rem;
+            font-size: 3.5rem - .2 * 3.5rem;
+        }
+        @media (max-width : 32rem) {
+            height: 5rem - .4 * 5rem;
+            width: 6rem - .4 * 6rem;
+            line-height: 5rem - .4 * 5rem;
+            font-size: 3.5rem - .4 * 3.5rem;
+        }  
+
+        cursor: pointer;
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+        transition: all .3s;
+        position: absolute;
+        &:hover {
+            transform: translateY(-2px);
+        }
+
+         &:active {
+            transform: translateY(0px);
+            background-color:orangered;
+        }
+    }
+
+
+    &__right {
+        position: absolute;
+        left: 12rem;
+        top:2rem;
+        @media (max-width : 60rem) {
+            left: 12rem - .2 * 12rem;
+            top:2rem - .2 * 2rem;
+        }
+        @media (max-width : 32rem) {
+            left: 12rem - .4 * 12rem;
+            top:2rem - .4 * 2rem;
+        }  
+    }
+    &__top {
+        position: absolute;
+        left: 6rem;
+        top:-2rem;
+        @media (max-width : 60rem) {
+            left: 6rem - .2 * 6rem;
+            top:-2rem - .2 * -2rem;
+        }
+        @media (max-width : 32rem) {
+            left: 6rem - .4 * 6rem;
+            top:-2rem - .4 * -2rem;
+        }  
+    }
+    &__bottom {
+        position: absolute;
+        top: 6rem;
+        left: 6rem;
+        @media (max-width : 60rem) {
+            left: 6rem - .2 * 6rem;
+            top:6rem - .2 * 6rem;
+        }
+        @media (max-width : 32rem) {
+            left: 6rem - .4 * 6rem;
+            top:6rem - .4 * 6rem;
+        }  
+    }
+    &__left {
+        position: absolute;
+        top: 2rem;
+        left: 0rem;
+        @media (max-width : 60rem) {
+            left : 0;
+            top:2rem - .2 * 2rem;
+        }
+        @media (max-width : 32rem) {
+            left : 0;
+            top:2rem - .4 * 2rem;
+        }  
+    }
+
+}
+
+.buttons-click {
+    background-color: orangered;
+    transform: translateY(0px);
+}
