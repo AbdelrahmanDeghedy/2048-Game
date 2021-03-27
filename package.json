@@ -4,7 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "2048" : "node-sass sass/main.scss css/style.css -w"
+    "2048": "node-sass sass/main.scss css/style.css -w"
   },
   "author": "Abdelrahman Ehab",
   "license": "ISC",
