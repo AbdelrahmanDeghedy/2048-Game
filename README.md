@@ -8,7 +8,7 @@ It's a clone of the famous game: 2048 for the android. I created it using HTML, 
 
 ### Installation
 ```
-git clone git@github.com:[Your Username]/2048-game
+git clone https://github.com/AbdelrahmanDeghedy/2048-Game.git
 cd 2048-game
 npm install
 ```
