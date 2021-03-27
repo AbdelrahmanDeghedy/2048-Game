@@ -8,10 +8,12 @@ It's a clone of the famous game: 2048 for the android. I created it using HTML, 
 
 ### Installation
 ```
-git clone git@github.com:AbdelrahmanDeghedy/2048-game
+git clone git@github.com:[Your Username]/2048-game
 cd 2048-game
+npm install
 npm run 2048
 ```
+Open index.html
 
 ### Usage
 #### The rules of this game is simple:
