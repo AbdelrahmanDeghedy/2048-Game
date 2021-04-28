@@ -4,7 +4,10 @@
 
 
 ### Description
-It's a clone of the famous game: 2048 for the android. I created it using HTML, SASS, Javascript.
+
+- It's a game at whivh, we combine numbered tiles in order to gain a higher numbered tile. In this game you start with two tiles, the lowest possible number available is two. Then you will play by combining the tiles with the same number to have a tile with the sum of the number on the two tiles.
+
+- I created it using HTML, SASS, vanilla Javascript.
 
 ### Installation
 ```
