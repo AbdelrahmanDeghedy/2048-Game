@@ -1,0 +1,19 @@
+@mixin clear-fix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+ 
+@mixin cell-color-sec {
+    &-color {
+        background-color: $color-cell-sec;
+    }
+}
+
+@mixin cell-moving {
+    position: relative;
+    z-index: 5;
+    transition: all .4s;
+}

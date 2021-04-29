@@ -1,0 +1,115 @@
+.color-sec-2 {
+    background-color: $color-cell-sec;
+}
+
+.color-sec-2 {
+    background-color: $color-cell-sec-2;
+}
+
+.color-sec-3 {
+    background-color: $color-cell-sec-3;
+}
+
+.color-sec-4 {
+    background-color: $color-cell-sec-5;
+}
+
+.color-sec-5 {
+    background-color: $color-cell-sec-5;
+}
+
+.move-1-right {
+    @include cell-moving;
+    transform: translateX($cell-width);
+}
+.move-2-right {
+    @include cell-moving;
+    transform: translateX($cell-width * 2);
+    
+}
+.move-3-right {
+    @include cell-moving;
+    transform: translateX($cell-width * 3);
+}
+
+
+.move-1-left {
+    @include cell-moving;
+    transform: translateX(-1 * $cell-width);
+    
+}
+.move-2-left {
+    @include cell-moving;
+    transform: translateX(-1 * $cell-width * 2);
+    
+}
+.move-3-left {
+    @include cell-moving;
+    transform: translateX(-1 * $cell-width * 3);
+    
+}
+
+
+.move-1-bottom {
+    @include cell-moving;
+    transform: translateY($cell-height);
+    
+}
+.move-2-bottom {
+    @include cell-moving;
+    transform: translateY($cell-height * 2);
+    
+}
+.move-3-bottom {
+    @include cell-moving;
+    transform: translateY($cell-height * 3);
+    
+}
+
+
+.move-1-top {
+    @include cell-moving;
+    transform: translateY(-1 * $cell-height);
+    
+}
+.move-2-top {
+    @include cell-moving;
+    transform: translateY(-1 * $cell-height * 2);
+    
+}
+.move-3-top {
+    @include cell-moving;
+    transform: translateY(-1 * $cell-height * 3);
+}
+
+
+.container-over {
+
+    &::after {
+        content: "";
+        opacity: .6;
+        position: absolute;
+        top:0;
+        left:0;
+        width: 40rem;
+        height: 40rem;
+        background-color: $color-white;
+        border-radius: 2px;
+    }
+
+    &-text {
+        position: absolute;
+        width: 100%;
+        font-size: 4rem;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 20;
+
+        &-hide {
+            visibility: none;
+            opacity: 0;
+        }
+    }
+}

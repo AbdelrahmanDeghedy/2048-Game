@@ -1,0 +1,10 @@
+html {
+    font-size: 62.5%;
+    height: 100vh;
+}
+
+body, body::after, body::before {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}

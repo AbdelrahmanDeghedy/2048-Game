@@ -1,0 +1,31 @@
+.score {
+    font-size: 3rem;
+    color: rgba($color-black, .5);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 5rem;
+    width: 20%;
+    height: 5rem;
+    background-color: rgba($color-white, .7);
+    border-radius: 3px;
+    position: absolute;
+    left: 50%;
+    top: 2rem;
+    transform: translateX(-50%);
+
+    @media (max-width : 60rem) {
+        width: 30%;
+        height: 5rem;
+        top : 4rem;
+    }  
+    @media (max-width : 32rem) {
+        width: 40%;
+        top : 8rem;
+    } 
+    @media (max-height : 40rem) {
+        top : 3rem;
+    }
+    @media (max-height : 35rem) {
+        top : 1rem;
+    }  
+}

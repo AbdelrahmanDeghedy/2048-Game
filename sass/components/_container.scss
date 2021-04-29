@@ -1,0 +1,280 @@
+.container {
+    
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 40rem;
+    height: 40rem;
+    background-color: $color-white;
+    border-radius: 2px;
+    box-shadow: 0 1rem 2rem rgba($color-black, .5);
+    border : solid 1px  $color-border;
+        @media (max-width : 60rem) {
+            width:32rem;
+            height: 32rem;
+        }
+        @media (max-width : 32rem) {
+            width:24rem;
+            height: 24rem;
+        }
+        @media (max-height : 35rem) {
+            top : 50%;
+            left : 53%;
+        } 
+
+
+    &__content {
+        &-hide {
+            opacity: 0;
+        }
+        background-color: $color-cell-sec;
+
+        transition: all .2s;
+
+        &-scale-up {
+            animation: scale-up .6s;
+            animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+        }
+    }
+
+    
+    & &__cell {
+        font-size: 4rem;
+        text-align: center;
+        vertical-align: middle; // centering vertically (two statemtens)
+        line-height: $cell-height;
+        width: $cell-width;
+        height: $cell-height;
+        position: absolute;
+        border : solid 1px  $color-border;
+        @media (max-width : 60rem) {
+            font-size: 4rem - (.2 * 4rem);
+            width : $cell-width - (.2) * $cell-width;
+            height : $cell-height - (.2) * $cell-height;
+            line-height: $cell-height - (.2) * $cell-height;
+        }
+        @media (max-width : 32rem) {
+            font-size: 4rem - (.4 * 4rem);
+            width : $cell-width - (.4) * $cell-width;
+            height : $cell-height - (.4) * $cell-height;
+            line-height: $cell-height - (.4) * $cell-height;
+        }
+    }
+    
+
+    &__cell {
+        &-0-0 { 
+            top:$cell-0-0-top;
+            left: $cell-0-0-left;
+            background-color: $color-cell;
+            @media (max-width : 60rem) {
+                top :$cell-0-0-top - (.2) * $cell-0-0-top;
+                left: $cell-0-0-left - (.2) * $cell-0-0-left;
+            } 
+            @media (max-width : 32rem) {
+                top :$cell-0-0-top - (.4) * $cell-0-0-top;
+                left: $cell-0-0-left - (.4) * $cell-0-0-left;
+            } 
+        }
+        &-0-1 {
+            top:$cell-0-1-top;
+            left: $cell-0-1-left;
+            background-color: $color-cell;  
+            @media (max-width : 60rem) {
+                top :$cell-0-1-top - (.2) * $cell-0-1-top;
+                left: $cell-0-1-left - (.2) * $cell-0-1-left;
+            } 
+            @media (max-width : 32rem) {
+                top :$cell-0-1-top - (.4) * $cell-0-1-top;
+                left: $cell-0-1-left - (.4) * $cell-0-1-left;
+            }       
+        }
+        &-0-2 {
+            top:$cell-0-2-top;
+            left: $cell-0-2-left;
+            background-color: $color-cell; 
+            @media (max-width : 60rem) {
+                top :$cell-0-2-top - (.2) * $cell-0-2-top;
+                left: $cell-0-2-left - (.2) * $cell-0-2-left;
+            }     
+            @media (max-width : 32rem) {
+                top :$cell-0-2-top - (.4) * $cell-0-2-top;
+                left: $cell-0-2-left - (.4) * $cell-0-2-left;
+            }        
+        }
+        &-0-3 {
+            top:$cell-0-3-top;
+            left: $cell-0-3-left;
+            background-color: $color-cell;    
+            @media (max-width : 60rem) {
+                top :$cell-0-3-top - (.2) * $cell-0-3-top;
+                left: $cell-0-3-left - (.2) * $cell-0-3-left;
+            } 
+            @media (max-width : 32rem) {
+                top :$cell-0-3-top - (.4) * $cell-0-3-top;
+                left: $cell-0-3-left - (.4) * $cell-0-3-left;
+            }     
+        }
+
+        &-1-0 {
+            top:$cell-1-0-top;
+            left: $cell-1-0-left;
+            background-color: $color-cell;  
+            @media (max-width : 60rem) {
+                top :$cell-1-0-top - (.2) * $cell-1-0-top;
+                left: $cell-1-0-left - (.2) * $cell-1-0-left;
+            }  
+            @media (max-width : 32rem) {
+                top :$cell-1-0-top - (.4) * $cell-1-0-top;
+                left: $cell-1-0-left - (.4) * $cell-1-0-left;
+            }       
+        }
+        &-1-1 {
+            top:$cell-1-1-top;
+            left: $cell-1-1-left;
+            background-color: $color-cell; 
+            @media (max-width : 60rem) {
+                top :$cell-1-1-top - (.2) * $cell-1-1-top;
+                left: $cell-1-1-left - (.2) * $cell-1-1-left;
+            }
+            @media (max-width : 32rem) {
+                top :$cell-1-1-top - (.4) * $cell-1-1-top;
+                left: $cell-1-1-left - (.4) * $cell-1-1-left;
+            }            
+        }
+        &-1-2 {
+            top:$cell-1-2-top;
+            left: $cell-1-2-left;
+            background-color: $color-cell;
+            @media (max-width : 60rem) {
+                top :$cell-1-2-top - (.2) * $cell-1-2-top;
+                left: $cell-1-2-left - (.2) * $cell-1-2-left;
+            }
+            @media (max-width : 32rem) {
+                top :$cell-1-2-top - (.4) * $cell-1-2-top;
+                left: $cell-1-2-left - (.4) * $cell-1-2-left;
+            }     
+        }
+        &-1-3 {
+            top:$cell-1-3-top;
+            left: $cell-1-3-left;
+            background-color: $color-cell;
+            @media (max-width : 60rem) {
+                top :$cell-1-3-top - (.2) * $cell-1-3-top;
+                left: $cell-1-3-left - (.2) * $cell-1-3-left;
+            }
+            @media (max-width : 32rem) {
+                top :$cell-1-3-top - (.4) * $cell-1-3-top;
+                left: $cell-1-3-left - (.4) * $cell-1-3-left;
+            }     
+        }
+
+        &-2-0 {
+            top:$cell-2-0-top;
+            left: $cell-2-0-left;
+            background-color: $color-cell;
+            @media (max-width : 60rem) {
+                top :$cell-2-0-top - (.2) * $cell-2-0-top;
+                left: $cell-2-0-left - (.2) * $cell-2-0-left;
+            }
+            @media (max-width : 32rem) {
+                top :$cell-2-0-top - (.4) * $cell-2-0-top;
+                left: $cell-2-0-left - (.4) * $cell-2-0-left;
+            }     
+        }
+        &-2-1 {
+            top: $cell-2-1-top;
+            left: $cell-2-1-left;
+            background-color: $color-cell;
+            @media (max-width : 60rem) {
+                top :$cell-2-1-top - (.2) * $cell-2-1-top;
+                left: $cell-2-1-left - (.2) * $cell-2-1-left;
+            }
+            @media (max-width : 32rem) {
+                top :$cell-2-1-top - (.4) * $cell-2-1-top;
+                left: $cell-2-1-left - (.4) * $cell-2-1-left;
+            }    
+        }
+        &-2-2 {
+            top: $cell-2-2-top;
+            left: $cell-2-2-left;
+            background-color: $color-cell;
+            @media (max-width : 60rem) {
+                top :$cell-2-2-top - (.2) * $cell-2-2-top;
+                left: $cell-2-2-left - (.2) * $cell-2-2-left;
+            } 
+            @media (max-width : 32rem) {
+                top :$cell-2-2-top - (.4) * $cell-2-2-top;
+                left: $cell-2-2-left - (.4) * $cell-2-2-left;
+            }    
+        }
+        &-2-3 {
+            top: $cell-2-3-top;
+            left: $cell-2-3-left;
+            background-color: $color-cell;
+            @media (max-width : 60rem) {
+                top :$cell-2-3-top - (.2) * $cell-2-3-top;
+                left: $cell-2-3-left - (.2) * $cell-2-3-left;
+            }
+            @media (max-width : 32rem) {
+                top :$cell-2-3-top - (.4) * $cell-2-3-top;
+                left: $cell-2-3-left - (.4) * $cell-2-3-left;
+            }    
+        }
+
+        &-3-0 {
+            top: $cell-3-0-top;
+            left: $cell-3-0-left;
+            background-color: $color-cell;
+            @media (max-width : 60rem) {
+                top :$cell-3-0-top - (.2) * $cell-3-0-top;
+                left: $cell-3-0-left - (.2) * $cell-3-0-left;
+            } 
+            @media (max-width : 32rem) {
+                top :$cell-3-0-top - (.4) * $cell-3-0-top;
+                left: $cell-3-0-left - (.4) * $cell-3-0-left;
+            }    
+        }
+        &-3-1 {
+            top: $cell-3-1-top;
+            left: $cell-3-1-left;
+            background-color: $color-cell;
+            @media (max-width : 60rem) {
+                top :$cell-3-1-top - (.2) * $cell-3-1-top;
+                left: $cell-3-1-left - (.2) * $cell-3-1-left;
+            }
+            @media (max-width : 32rem) {
+                top :$cell-3-1-top - (.4) * $cell-3-1-top;
+                left: $cell-3-1-left - (.4) * $cell-3-1-left;
+            }  
+        }
+        &-3-2 {
+            top: $cell-3-2-top;
+            left: $cell-3-2-left;
+            background-color: $color-cell;
+            @media (max-width : 60rem) {
+                top :$cell-3-2-top - (.2) * $cell-3-2-top;
+                left: $cell-3-2-left - (.2) * $cell-3-2-left;
+            } 
+            @media (max-width : 32rem) {
+                top :$cell-3-2-top - (.4) * $cell-3-2-top;
+                left: $cell-3-2-left - (.4) * $cell-3-2-left;
+            }  
+        }
+        &-3-3 {
+            top: $cell-3-3-top;
+            left: $cell-3-3-left;
+            background-color: $color-cell;
+            @media (max-width : 60rem) {
+                top :$cell-3-3-top - (.2) * $cell-3-3-top;
+                left: $cell-3-3-left - (.2) * $cell-3-3-left;
+            } 
+            @media (max-width : 32rem) {
+                top :$cell-3-3-top - (.4) * $cell-3-3-top;
+                left: $cell-3-3-left - (.4) * $cell-3-3-left;
+            }  
+        }
+    }
+
+}
