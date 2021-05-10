@@ -9,6 +9,11 @@
 
 - I created it using HTML, SASS, vanilla Javascript.
 
+#### View the live version of the website from here:
+
+https://2048-game-rho.vercel.app/
+
+
 ### Installation
 ```
 git clone https://github.com/AbdelrahmanDeghedy/2048-Game.git
@@ -27,9 +32,6 @@ Open index.html
 3- The game is over, when all the cells are filled, and you have no move left.
 
 > You can play either using the mouse or using the four arrows on the keyboard.
-
-### Common Bugs
-There is a little bug when you click with the mouse (or keyboard) so quickly (before the new cell is inserted). You will find some logic errors.
 
 
 ### License
